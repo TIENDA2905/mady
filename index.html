@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>NOVEDADES MADY | Catálogo Digital</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="🌸 NOVEDADES MADY | Catálogo Exclusivo">
+  <meta property="og:description" content="Moda en tendencia, cosméticos y novedades exclusivas. Pedidos directos y atención por WhatsApp.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            themePrimary: 'var(--primary-color, #681B32)',
+            themeGold: 'var(--gold-color, #C39B53)',
+            themeBg: 'var(--bg-color, #FAF8F5)',
+            themeSurface: 'var(--surface-color, #FFFFFF)',
+          },
+          fontFamily: {
+            title: ['var(--font-title, "Playfair Display")', 'serif'],
+            body: ['var(--font-body, "Montserrat")', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #681B32;
+      --gold-color: #C39B53;
+      --bg-color: #FAF8F5;
+      --surface-color: #FFFFFF;
+      --font-title: 'Playfair Display', serif;
+      --font-body: 'Montserrat', sans-serif;
+      --radius-val: 1rem;
+    }
+    body {
+      background-color: var(--bg-color);
+      font-family: var(--font-body);
+    }
+    .custom-radius { border-radius: var(--radius-val); }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, var(--gold-color) 0%, #E2C785 50%, #99742B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="text-stone-800 antialiased min-h-screen flex flex-col selection:bg-amber-200">
+
+  <!-- Barra Superior -->
+  <div style="background-color: var(--primary-color);" class="text-amber-100 text-xs py-2 px-4 shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center text-[11px] sm:text-xs">
+      <span class="hidden sm:inline flex items-center gap-1.5">
+        <i class="fas fa-sparkles text-amber-300"></i> NOVEDADES MADY • CALIDAD & ELEGANCIA
+      </span>
+      <span class="mx-auto sm:mx-0 font-medium tracking-wide" id="topBarBannerLocation">
+        <i class="fas fa-truck text-amber-300 mr-1"></i> ENVÍOS PROGRAMADOS A TODO MÉXICO
+      </span>
+      <div class="flex items-center gap-3">
+        <button onclick="shareCatalogLink()" class="bg-white/10 hover:bg-white/20 px-2.5 py-1 rounded-full flex items-center gap-1 transition text-white font-medium">
+          <i class="fab fa-whatsapp text-emerald-300"></i> Compartir
+        </button>
+        <button onclick="requestAdminAccess()" class="bg-amber-400 text-stone-900 font-bold px-2.5 py-1 rounded-full flex items-center gap-1 hover:bg-amber-300 transition text-[10px]">
+          <i class="fas fa-cog"></i> MODO ADMIN
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Encabezado Principal -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between gap-4">
+      
+      <div onclick="requestAdminAccess()" class="flex items-center gap-3 cursor-pointer select-none group" title="Novedades Mady">
+        <div id="headerLogoContainer" class="relative w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0 flex items-center justify-center">
+          <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-sm transition-transform duration-300 group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="100" cy="100" rx="78" ry="76" stroke="#C39B53" stroke-width="1.8" stroke-dasharray="210 25" transform="rotate(-15 100 100)"/>
+            <path d="M48 95 C45 70, 60 52, 85 45" stroke="#681B32" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M50 78 C42 74, 46 64, 53 68 Z" fill="#E8A598" stroke="#681B32" stroke-width="0.8"/>
+            <path d="M60 66 C53 60, 59 52, 65 56 Z" fill="#F4BFB2" stroke="#681B32" stroke-width="0.8"/>
+            <path d="M74 54 C70 45, 78 40, 84 46 Z" fill="#DE8B99" stroke="#681B32" stroke-width="0.8"/>
+            <path d="M115 155 C140 148, 155 130, 152 105" stroke="#681B32" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M128 146 C124 154, 133 158, 137 151 Z" fill="#E8A598" stroke="#681B32" stroke-width="0.8"/>
+            <path d="M140 134 C148 138, 151 130, 145 125 Z" fill="#F4BFB2" stroke="#681B32" stroke-width="0.8"/>
+            <g transform="translate(100, 68) scale(0.68) translate(-35, -35)">
+              <rect x="18" y="22" width="34" height="42" rx="2" fill="#FFFFFF" stroke="#681B32" stroke-width="2.2"/>
+              <path d="M18 22 L10 32 L10 68 L18 64 Z" fill="#FBF5EC" stroke="#681B32" stroke-width="1.8"/>
+              <path d="M28 22 C28 14, 42 14, 42 22" fill="none" stroke="#C39B53" stroke-width="2.2" stroke-linecap="round"/>
+              <ellipse cx="35" cy="45" rx="30" ry="12" stroke="#C39B53" stroke-width="1.8" fill="none" transform="rotate(-15 35 45)"/>
+              <path d="M52 16 L54 22 L60 24 L54 26 L52 32 L50 26 L44 24 L50 22 Z" fill="#C39B53"/>
+              <circle cx="16" cy="36" r="1.8" fill="#C39B53"/>
+            </g>
+            <text x="100" y="112" text-anchor="middle" font-family="'Playfair Display', serif" font-size="21" font-weight="600" fill="#681B32" letter-spacing="1.5">Novedades</text>
+            <text x="100" y="148" text-anchor="middle" font-family="'Alex Brush', cursive" font-size="44" fill="#681B32">Mady</text>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span style="color: var(--primary-color);" class="font-title text-xl sm:text-2xl font-bold tracking-wider leading-none">Novedades</span>
+          <span style="color: var(--gold-color);" class="font-script text-2xl sm:text-3xl leading-none mt-0.5">Mady</span>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center flex-1 max-w-sm mx-4">
+        <div class="relative w-full">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Buscar vestidos, bolsas, accesorios..." 
+            class="w-full pl-9 pr-4 py-2 text-xs bg-stone-100/80 border border-stone-200 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition"
+            oninput="handleSearch(this.value)"
+          >
+          <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button 
+          onclick="shareCatalogLink()"
+          class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-emerald-800 bg-emerald-50 border border-emerald-300 rounded-full hover:bg-emerald-100 transition shadow-xs"
+        >
+          <i class="fab fa-whatsapp text-emerald-600 text-sm"></i>
+          <span>Compartir Catálogo</span>
+        </button>
+
+        <button 
+          onclick="toggleCartModal()"
+          style="background-color: var(--primary-color);"
+          class="text-amber-100 px-3.5 py-2 rounded-full flex items-center gap-2 shadow-sm hover:opacity-95 transition"
+        >
+          <i class="fas fa-shopping-bag"></i>
+          <span class="hidden sm:inline text-xs font-semibold">Mi Pedido</span>
+          <span id="cartBadge" class="bg-amber-400 text-stone-900 text-[11px] font-bold h-5 min-w-[20px] px-1.5 rounded-full flex items-center justify-center">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="md:hidden px-4 pb-2.5">
+      <div class="relative w-full">
+        <input 
+          type="text" 
+          id="searchInputMobile" 
+          placeholder="Buscar prendas o novedades..." 
+          class="w-full pl-9 pr-3 py-2 text-xs bg-stone-100 border border-stone-200 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-500"
+          oninput="handleSearch(this.value)"
+        >
+        <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Portada -->
+  <section class="relative py-10 sm:py-14 text-white overflow-hidden" style="background: linear-gradient(135deg, var(--primary-color) 0%, #3F0E1E 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-amber-200 text-xs mb-3">
+        <i class="fas fa-sparkles text-amber-300"></i>
+        <span id="heroBadgeText">COLECCIÓN EXCLUSIVA 2026</span>
+      </div>
+      <h1 class="font-title text-3xl sm:text-5xl font-bold tracking-tight">
+        <span id="heroTitleLine1">Estilo, Belleza &</span> <br class="hidden sm:inline">
+        <span class="italic font-light text-amber-200" id="heroTitleLine2">Las Mejores Novedades</span>
+      </h1>
+      <p id="heroSubtitleText" class="mt-3 text-stone-200 text-xs sm:text-sm max-w-xl mx-auto font-light leading-relaxed">
+        Descubre piezas seleccionadas con amor para realzar tu belleza. Selecciona tus prendas y haz tu pedido seguro directamente por WhatsApp.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3 justify-center">
+        <a href="#catalogo" style="background-color: var(--gold-color);" class="text-stone-900 font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-full shadow-md hover:brightness-110 transition">
+          Ver Catálogo Completo
+        </a>
+        <button onclick="shareCatalogLink()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs tracking-wider px-5 py-2.5 rounded-full shadow-md flex items-center gap-2 transition">
+          <i class="fab fa-whatsapp"></i> Compartir Catálogo
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <main id="catalogo" class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-stone-200">
+      <div>
+        <h2 style="color: var(--primary-color);" class="font-title text-2xl font-bold">Catálogo de Productos</h2>
+        <p id="productCountInfo" class="text-xs text-stone-500">Cargando colección...</p>
+      </div>
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1" id="categoryTabsContainer"></div>
+    </div>
+
+    <!-- Filtro / Orden -->
+    <div class="flex justify-between items-center text-xs py-3 text-stone-500">
+      <div class="flex items-center gap-2">
+        <span>Ordenar:</span>
+        <select id="sortSelect" onchange="applySorting(this.value)" class="bg-transparent border-b border-stone-300 pb-0.5 text-xs text-stone-800 focus:outline-none">
+          <option value="featured">Destacados</option>
+          <option value="price-asc">Precio: Menor a Mayor</option>
+          <option value="price-desc">Precio: Mayor a Menor</option>
+          <option value="name">Alfabético (A-Z)</option>
+        </select>
+      </div>
+      <button onclick="requestAdminAccess()" class="text-amber-800 hover:underline font-semibold flex items-center gap-1">
+        <i class="fas fa-lock text-[10px]"></i> Administrar Tienda
+      </button>
+    </div>
+
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-3"></div>
+
+    <div id="emptyState" class="hidden text-center py-16">
+      <i class="fas fa-search text-3xl text-stone-400 mb-3"></i>
+      <h3 class="font-title text-xl font-bold text-stone-700">No encontramos productos con ese filtro</h3>
+      <button onclick="resetFilters()" class="mt-3 px-4 py-2 bg-stone-800 text-white rounded-full text-xs font-semibold">
+        Mostrar Todos
+      </button>
+    </div>
+  </main>
+
+  <!-- Carrito / Pedido -->
+  <div id="cartModalBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleCartModal()"></div>
+  <aside id="cartDrawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-4 border-b border-stone-200 flex items-center justify-between" style="background-color: var(--primary-color); color: white;">
+      <div class="flex items-center gap-2">
+        <i class="fas fa-shopping-bag text-amber-300"></i>
+        <h3 class="font-title text-lg font-bold">Tu Pedido • Novedades Mady</h3>
+      </div>
+      <button onclick="toggleCartModal()" class="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div id="cartItemList" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
+
+    <div class="p-4 border-t border-stone-200 bg-stone-50">
+      <div class="flex justify-between text-base font-bold text-stone-900 pb-3 border-b border-stone-200">
+        <span>Total Estimado:</span>
+        <span id="cartTotal" class="font-title text-xl" style="color: var(--primary-color);">$0.00 MXN</span>
+      </div>
+
+      <div class="mt-3 space-y-2">
+        <input type="text" id="customerNameInput" placeholder="Tu Nombre completo" class="w-full text-xs px-3 py-2 border rounded-lg focus:outline-none bg-white">
+        <input type="text" id="customerLocationInput" placeholder="Ciudad o dirección de entrega" class="w-full text-xs px-3 py-2 border rounded-lg focus:outline-none bg-white">
+      </div>
+
+      <button onclick="sendOrderWhatsApp()" class="mt-3 w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg">
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span>Enviar Pedido por WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- PANEL DE ADMINISTRACIÓN -->
+  <div id="adminBackdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleAdminDrawer()"></div>
+  <aside id="adminDrawer" class="fixed top-0 right-0 h-full w-full max-w-xl bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    
+    <div class="p-4 border-b border-stone-200 flex items-center justify-between" style="background-color: var(--primary-color); color: white;">
+      <div class="flex items-center gap-2">
+        <i class="fas fa-tools text-amber-300"></i>
+        <div>
+          <h3 class="font-title text-base sm:text-lg font-bold leading-tight">Panel Dueña • Novedades Mady</h3>
+          <p class="text-[10px] text-amber-200">Administra productos, diseño y WhatsApp de forma fácil</p>
+        </div>
+      </div>
+      <button onclick="toggleAdminDrawer()" class="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center text-white">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Barra de sincronización -->
+    <div id="ghSyncStatusBar" class="p-2.5 text-xs flex items-center justify-between bg-amber-50 text-amber-900 border-b border-amber-200">
+      <div class="flex items-center gap-2">
+        <i class="fab fa-github text-sm"></i>
+        <span id="ghSyncStatusText">Sincronización lista.</span>
+      </div>
+      <button onclick="downloadJsonBackup()" class="text-[10px] bg-white border border-stone-300 px-2 py-0.5 rounded font-semibold text-stone-700 hover:bg-stone-100" title="Descargar datos_tienda.json">
+        <i class="fas fa-download mr-1"></i> Descargar JSON
+      </button>
+    </div>
+
+    <div class="flex border-b border-stone-200 bg-stone-100 text-[11px] font-semibold overflow-x-auto no-scrollbar">
+      <button id="admTabBtn1" onclick="switchAdminTab('addProduct')" class="py-2.5 px-3 border-b-2 border-amber-600 font-bold bg-white text-stone-900 whitespace-nowrap">
+        <i class="fas fa-plus mr-1 text-amber-600"></i> + Producto
+      </button>
+      <button id="admTabBtn2" onclick="switchAdminTab('inventory')" class="py-2.5 px-3 border-b-2 border-transparent text-stone-600 whitespace-nowrap">
+        <i class="fas fa-boxes mr-1"></i> Inventario (<span id="admProdCount">0</span>)
+      </button>
+      <button id="admTabBtn3" onclick="switchAdminTab('design')" class="py-2.5 px-3 border-b-2 border-transparent text-stone-600 whitespace-nowrap">
+        <i class="fas fa-palette mr-1 text-purple-600"></i> 🎨 Diseño Web
+      </button>
+      <button id="admTabBtn4" onclick="switchAdminTab('whatsapp')" class="py-2.5 px-3 border-b-2 border-transparent text-stone-600 whitespace-nowrap">
+        <i class="fab fa-whatsapp mr-1 text-emerald-600"></i> Mensaje Compartir
+      </button>
+      <button id="admTabBtn5" onclick="switchAdminTab('sync')" class="py-2.5 px-3 border-b-2 border-transparent text-stone-600 whitespace-nowrap">
+        <i class="fas fa-cloud mr-1 text-blue-600"></i> Conexión GitHub
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-4 space-y-4">
+
+      <!-- PESTAÑA 1: AGREGAR PRODUCTO -->
+      <div id="admTabAddProduct" class="space-y-3">
+        <div class="p-2.5 bg-amber-50 rounded-lg border border-amber-200 text-xs flex justify-between items-center text-amber-900">
+          <span id="formModeTitle" class="font-bold">Nuevo Producto</span>
+          <button id="cancelEditBtn" onclick="resetProductForm()" class="hidden underline text-amber-800 text-[11px]">Cancelar</button>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Nombre del Producto *:</label>
+          <input type="text" id="newProdName" class="w-full text-xs px-3 py-2 border rounded-lg focus:outline-none" placeholder="Ej: Vestido Elegante Novedades Mady">
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Categoría *:</label>
+            <select id="newProdCat" class="w-full text-xs px-3 py-2 border rounded-lg focus:outline-none"></select>
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Código / SKU:</label>
+            <input type="text" id="newProdSku" class="w-full text-xs px-3 py-2 border rounded-lg" placeholder="MD-101">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Precio ($ MXN) *:</label>
+            <input type="number" id="newProdPrice" class="w-full text-xs px-3 py-2 border rounded-lg" placeholder="590">
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Precio Anterior (Opcional):</label>
+            <input type="number" id="newProdOldPrice" class="w-full text-xs px-3 py-2 border rounded-lg" placeholder="750">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Tallas o Tonos (separados por coma):</label>
+          <input type="text" id="newProdVariants" class="w-full text-xs px-3 py-2 border rounded-lg" placeholder="Unitalla, Chica, Mediana, Grande">
+        </div>
+
+        <div class="p-3 bg-stone-50 border border-stone-200 rounded-xl space-y-2">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold text-stone-800 uppercase">Fotos del Producto (1 a 10 fotos):</span>
+            <span id="photoCounterBadge" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500 text-white">0 / 10</span>
+          </div>
+          <div class="border-2 border-dashed border-stone-300 rounded-lg p-3 text-center bg-white relative cursor-pointer hover:border-amber-500 transition">
+            <input type="file" id="newProdMultipleFiles" multiple accept="image/*" onchange="handleMultipleImagesUpload(event)" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full">
+            <i class="fas fa-camera text-xl text-amber-600 mb-1"></i>
+            <p class="text-xs font-semibold text-stone-700">Toca para seleccionar fotos</p>
+            <p class="text-[10px] text-stone-400">Se comprimen de manera automática</p>
+          </div>
+          <div class="flex gap-2">
+            <input type="url" id="singleImgUrlInput" placeholder="O pega un enlace de imagen (https://...)" class="flex-1 text-xs px-3 py-1.5 border rounded-lg">
+            <button onclick="addUrlPhoto()" type="button" class="px-3 py-1.5 bg-stone-200 text-stone-800 text-xs font-semibold rounded-lg">+ Añadir URL</button>
+          </div>
+          <div id="photosPreviewContainer" class="grid grid-cols-5 gap-2 pt-1"></div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Descripción:</label>
+          <textarea id="newProdDesc" rows="2" class="w-full text-xs px-3 py-1.5 border rounded-lg" placeholder="Detalles de diseño, tela, calidad..."></textarea>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <input type="checkbox" id="newProdIsSale" class="rounded text-amber-600">
+          <label for="newProdIsSale" class="text-xs text-stone-700 font-medium">Marcar como oferta o promoción</label>
+        </div>
+
+        <button onclick="saveProductAction()" id="saveProdBtn" style="background-color: var(--primary-color);" class="w-full py-3 text-white rounded-xl text-xs font-bold uppercase tracking-wider shadow-md hover:opacity-95 transition">
+          Publicar en Catálogo
+        </button>
+      </div>
+
+      <!-- PESTAÑA 2: INVENTARIO -->
+      <div id="admTabInventory" class="hidden space-y-2">
+        <p class="text-xs text-stone-500">Toca <strong>Editar</strong> para modificar cualquier artículo.</p>
+        <div id="admInventoryList" class="space-y-2"></div>
+      </div>
+
+      <!-- PESTAÑA 3: DISEÑO -->
+      <div id="admTabDesign" class="hidden space-y-4">
+        <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl">
+          <h4 class="text-xs font-bold text-purple-900 uppercase flex items-center gap-1.5 mb-1">
+            <i class="fas fa-palette"></i> Cambiar Diseño en 1 Clic
+          </h4>
+          <div class="grid grid-cols-2 gap-2 mt-2">
+            <button onclick="applyDesignTheme('#681B32', '#C39B53', '#FAF8F5')" class="p-2 rounded-lg border bg-white text-left hover:border-purple-600 transition">
+              <span class="block text-xs font-bold text-[#681B32]">🌸 Novedades Mady</span>
+              <span class="text-[10px] text-stone-500">Vino Tinto & Dorado</span>
+            </button>
+            <button onclick="applyDesignTheme('#9D174D', '#F472B6', '#FFF1F2')" class="p-2 rounded-lg border bg-white text-left hover:border-purple-600 transition">
+              <span class="block text-xs font-bold text-[#9D174D]">💖 Rosa Romántico</span>
+              <span class="text-[10px] text-stone-500">Rosa Chic</span>
+            </button>
+            <button onclick="applyDesignTheme('#1E1B18', '#D4AF37', '#FAF9F6')" class="p-2 rounded-lg border bg-white text-left hover:border-purple-600 transition">
+              <span class="block text-xs font-bold text-[#1E1B18]">✨ Boutique Glam</span>
+              <span class="text-[10px] text-stone-500">Negro & Oro</span>
+            </button>
+            <button onclick="applyDesignTheme('#065F46', '#34D399', '#F0FDF4')" class="p-2 rounded-lg border bg-white text-left hover:border-purple-600 transition">
+              <span class="block text-xs font-bold text-[#065F46]">🌿 Esmeralda</span>
+              <span class="text-[10px] text-stone-500">Verde Jade</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 border border-stone-200 rounded-xl space-y-3">
+          <h4 class="text-xs font-bold text-stone-800 uppercase">Colores:</h4>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-[11px] font-semibold text-stone-700 mb-1">Color Principal:</label>
+              <div class="flex items-center gap-2">
+                <input type="color" id="cfgDesignPrimaryColor" class="w-9 h-9 p-0 rounded border cursor-pointer">
+                <span id="cfgDesignPrimaryHex" class="text-xs font-mono text-stone-600">#681B32</span>
+              </div>
+            </div>
+            <div>
+              <label class="block text-[11px] font-semibold text-stone-700 mb-1">Color Dorado / Acentos:</label>
+              <div class="flex items-center gap-2">
+                <input type="color" id="cfgDesignGoldColor" class="w-9 h-9 p-0 rounded border cursor-pointer">
+                <span id="cfgDesignGoldHex" class="text-xs font-mono text-stone-600">#C39B53</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 bg-stone-50 border border-stone-200 rounded-xl space-y-2">
+          <h4 class="text-xs font-bold text-stone-800 uppercase">Tipografía y Bordes:</h4>
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="block text-[10px] uppercase font-bold text-stone-600 mb-1">Estilo de Letra:</label>
+              <select id="cfgDesignFont" class="w-full text-xs px-2.5 py-2 border rounded-lg bg-white">
+                <option value="'Playfair Display', serif">Elegante (Playfair)</option>
+                <option value="'Montserrat', sans-serif">Moderna (Montserrat)</option>
+                <option value="'Poppins', sans-serif">Amigable (Poppins)</option>
+                <option value="'Cormorant Garamond', serif">Boutique (Cormorant)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[10px] uppercase font-bold text-stone-600 mb-1">Esquinas de Botones:</label>
+              <select id="cfgDesignRadius" class="w-full text-xs px-2.5 py-2 border rounded-lg bg-white">
+                <option value="1.25rem">Redondeadas</option>
+                <option value="0.5rem">Suaves</option>
+                <option value="0.125rem">Rectas</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="saveDesignSettingsAction()" style="background-color: var(--primary-color);" class="w-full py-3 text-white rounded-xl text-xs uppercase font-bold tracking-wider shadow">
+          Guardar Diseño de Página
+        </button>
+      </div>
+
+      <!-- PESTAÑA 4: MENSAJE WHATSAPP -->
+      <div id="admTabWhatsApp" class="hidden space-y-3">
+        <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl">
+          <h4 class="text-xs font-bold text-emerald-900 uppercase flex items-center gap-1.5 mb-1">
+            <i class="fab fa-whatsapp"></i> Mensaje para Compartir
+          </h4>
+          <p class="text-[11px] text-emerald-700">Usa <code>{LINK}</code> para insertar el enlace del catálogo.</p>
+        </div>
+
+        <div>
+          <textarea id="cfgShareCustomMessage" rows="7" class="w-full text-xs px-3 py-2 border rounded-lg font-sans leading-relaxed focus:outline-none"></textarea>
+        </div>
+
+        <div class="flex flex-wrap gap-1.5 text-[10px]">
+          <button type="button" onclick="insertMsgTag('{LINK}')" class="px-2 py-1 bg-stone-100 hover:bg-stone-200 rounded border font-mono">+ Link</button>
+          <button type="button" onclick="insertMsgTag('🌸')" class="px-2 py-1 bg-stone-100 hover:bg-stone-200 rounded border">🌸</button>
+          <button type="button" onclick="insertMsgTag('👗')" class="px-2 py-1 bg-stone-100 hover:bg-stone-200 rounded border">👗</button>
+          <button type="button" onclick="insertMsgTag('✨')" class="px-2 py-1 bg-stone-100 hover:bg-stone-200 rounded border">✨</button>
+          <button type="button" onclick="resetDefaultShareMsg()" class="px-2 py-1 text-red-600 hover:underline ml-auto">Restablecer</button>
+        </div>
+
+        <button onclick="saveWhatsAppMessageAction()" class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs uppercase font-bold tracking-wider shadow">
+          Guardar Mensaje de WhatsApp
+        </button>
+      </div>
+
+      <!-- PESTAÑA 5: CONEXIÓN GITHUB -->
+      <div id="admTabSync" class="hidden space-y-3">
+        <div class="p-3 bg-blue-50 border border-blue-200 rounded-xl text-xs text-blue-900">
+          <h4 class="font-bold uppercase flex items-center gap-1.5 mb-1">
+            <i class="fas fa-shield-alt"></i> Sincronización con GitHub
+          </h4>
+          <p class="text-[11px] leading-relaxed text-blue-800">
+            Tu token se guarda únicamente en este navegador y nunca se incluye en el archivo público.
+          </p>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-bold text-stone-700 uppercase mb-1">Token de GitHub (Personal Access Token):</label>
+          <input type="password" id="cfgGithubToken" class="w-full text-xs px-3 py-2 border rounded-lg focus:outline-none" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[10px] font-bold text-stone-700 uppercase mb-0.5">Usuario GitHub:</label>
+            <input type="text" id="cfgGhOwner" class="w-full text-xs px-3 py-1.5 border rounded-lg" placeholder="tienda2905">
+          </div>
+          <div>
+            <label class="block text-[10px] font-bold text-stone-700 uppercase mb-0.5">Repositorio:</label>
+            <input type="text" id="cfgGhRepo" class="w-full text-xs px-3 py-1.5 border rounded-lg" placeholder="MADYS">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block text-[10px] font-bold text-stone-700 uppercase mb-0.5">Rama (main o master):</label>
+            <input type="text" id="cfgGhBranch" class="w-full text-xs px-3 py-1.5 border rounded-lg" placeholder="main" value="main">
+          </div>
+          <div>
+            <label class="block text-[10px] font-bold text-stone-700 uppercase mb-0.5">Teléfono WhatsApp:</label>
+            <input type="text" id="cfgWhatsApp" class="w-full text-xs px-3 py-1.5 border rounded-lg" placeholder="4437459566">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[10px] font-bold text-stone-700 uppercase mb-0.5">Enlace Oficial de la Página:</label>
+          <input type="url" id="cfgSiteUrl" class="w-full text-xs px-3 py-1.5 border rounded-lg" placeholder="https://tienda2905.github.io/MADYS/">
+        </div>
+
+        <div class="pt-2 flex gap-2">
+          <button onclick="saveSyncConfigAction()" class="flex-1 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-xs uppercase font-bold tracking-wider shadow">
+            Guardar y Sincronizar
+          </button>
+          <button onclick="downloadJsonBackup()" class="px-4 py-3 bg-stone-200 hover:bg-stone-300 text-stone-800 rounded-xl text-xs font-bold uppercase tracking-wider" title="Descargar datos">
+            <i class="fas fa-download"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MODAL DETALLE PRODUCTO -->
+  <div id="productDetailModal" class="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/75 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white w-full max-w-3xl rounded-2xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 max-h-[92vh] flex flex-col md:flex-row">
+      <div class="md:w-1/2 relative bg-stone-100 flex flex-col items-center justify-between p-3 select-none">
+        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-stone-200 flex items-center justify-center">
+          <img id="modalProductImg" src="" alt="" class="w-full h-full object-cover">
+          <span id="modalProductBadge" class="absolute top-3 left-3 px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-amber-500 text-white shadow"></span>
+          <div id="modalPhotoCounter" class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-black/60 text-white text-[10px] font-mono">1 / 1</div>
+          <button id="modalPrevPhotoBtn" onclick="navigateModalPhoto(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 text-stone-800 flex items-center justify-center shadow">
+            <i class="fas fa-chevron-left text-xs"></i>
+          </button>
+          <button id="modalNextPhotoBtn" onclick="navigateModalPhoto(1)" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/80 text-stone-800 flex items-center justify-center shadow">
+            <i class="fas fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+        <div id="modalThumbnailsStrip" class="w-full flex gap-1.5 overflow-x-auto no-scrollbar pt-2 pb-1"></div>
+      </div>
+
+      <div class="md:w-1/2 p-5 flex flex-col justify-between overflow-y-auto">
+        <div>
+          <div class="flex items-center justify-between">
+            <span id="modalProductSku" class="text-[10px] font-mono text-stone-400"></span>
+            <button onclick="closeProductModal()" class="text-stone-400 hover:text-stone-800 text-lg">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <h3 id="modalProductTitle" class="font-title text-xl font-bold text-stone-900 mt-1"></h3>
+          <div class="flex items-baseline gap-2 mt-2">
+            <span id="modalProductPrice" class="text-2xl font-bold font-title" style="color: var(--primary-color);"></span>
+            <span id="modalProductOldPrice" class="text-xs text-stone-400 line-through"></span>
+          </div>
+          <p id="modalProductDesc" class="text-xs text-stone-600 mt-2.5 font-light leading-relaxed"></p>
+
+          <div class="mt-4">
+            <label class="block text-[10px] font-bold text-stone-600 uppercase mb-1">Talla o Variante:</label>
+            <div id="modalVariantOptions" class="flex flex-wrap gap-1.5"></div>
+          </div>
+        </div>
+
+        <div class="mt-5 pt-3 border-t border-stone-200 space-y-2">
+          <button onclick="addModalProductToCart()" style="background-color: var(--primary-color);" class="w-full py-3 rounded-xl text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Agregar a Mi Pedido</span>
+          </button>
+          <button onclick="inquireSingleProductWhatsApp()" class="w-full py-2.5 rounded-xl border border-emerald-500 text-emerald-700 hover:bg-emerald-50 font-semibold text-xs flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-emerald-600"></i>
+            <span>Consultar por WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notificación Toast -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-stone-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <i class="fas fa-check-circle text-emerald-400 text-lg"></i>
+    <div>
+      <h5 id="toastTitle" class="text-xs font-bold">¡Listo!</h5>
+      <p id="toastMessage" class="text-[11px] text-stone-300">Cambio realizado.</p>
+    </div>
+  </div>
+
+  <a id="floatWhatsAppBtn" href="#" target="_blank" class="fixed bottom-5 left-5 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-105">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-300 text-xs py-8 border-t border-stone-800 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+      <h4 class="font-title text-xl text-amber-200 tracking-wider">NOVEDADES MADY</h4>
+      <p class="text-stone-400 text-[11px]">Boutique en línea • Catálogo Digital con pedidos directos por WhatsApp</p>
+      <p class="text-stone-500 text-[10px] pt-2">© 2026 Novedades Mady. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const DEFAULT_CONFIG = {
+      siteUrl: "https://tienda2905.github.io/MADYS/",
+      ghOwner: "tienda2905",
+      ghRepo: "MADYS",
+      ghBranch: "main",
+      whatsapp: "4437459566",
+      phone: "4437459566",
+      location: "Zamora y alrededores",
+      heroBadge: "COLECCIÓN EXCLUSIVA 2026",
+      heroTitle1: "Estilo, Belleza &",
+      heroTitle2: "Las Mejores Novedades",
+      heroSubtitle: "Descubre piezas seleccionadas con amor para realzar tu belleza. Selecciona tus prendas y haz tu pedido seguro directamente por WhatsApp.",
+      primaryColor: "#681B32",
+      goldColor: "#C39B53",
+      bgColor: "#FAF8F5",
+      fontFamily: "'Playfair Display', serif",
+      borderRadius: "1rem",
+      shareMessage: "✨ *NOVEDADES MADY* ✨\n👗💄 *Catálogo Digital Exclusivo*\n\n¡Hola! Te invito a ver nuestras novedades y colección disponible aquí:\n👇 *Toca para ver el catálogo:* \n{LINK}\n\n_Puedes hacer tus pedidos o apartados directamente por WhatsApp._ 🌸✨"
+    };
+
+    const DEFAULT_CATEGORIES = [
+      { key: "todos", name: "TODOS", icon: "" },
+      { key: "ropa", name: "ROPA", icon: "fas fa-vest-patches" },
+      { key: "vestidos", name: "VESTIDOS", icon: "fas fa-female" },
+      { key: "cosmeticos", name: "COSMÉTICOS", icon: "fas fa-spa" },
+      { key: "ofertas", name: "% OFERTAS", icon: "" }
+    ];
+
+    const DEFAULT_PRODUCTS = [
+      {
+        id: "MD-01",
+        name: "Vestido Gala Escote Vino Elegance",
+        category: "vestidos",
+        price: 890,
+        oldPrice: 1100,
+        isSale: true,
+        images: ["https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=700&q=80"],
+        description: "Vestido elegante confeccionado con tela stretch premium que realza tu silueta de forma hermosa.",
+        variants: ["Chica (S)", "Mediana (M)", "Grande (L)"]
+      },
+      {
+        id: "MD-02",
+        name: "Bolsa Elegance Chic Novedades Mady",
+        category: "ropa",
+        price: 520,
+        oldPrice: 650,
+        isSale: false,
+        images: ["https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"],
+        description: "Bolsa de mano espaciosa con acabados dorados y asa reforzada.",
+        variants: ["Color Vino", "Color Negro", "Color Nude"]
+      }
+    ];
+
+    let config = JSON.parse(localStorage.getItem('mady_config')) || DEFAULT_CONFIG;
+    
+    // Eliminar cualquier propiedad sensible que pudiera haberse guardado en config
+    delete config.token;
+    delete config.githubToken;
+    delete config.ghToken;
+
+    if (config.ghRepo === 'madyst' || !config.ghRepo) {
+      config.ghRepo = 'MADYS';
+    }
+    if (!config.siteUrl || config.siteUrl.includes('madyst')) {
+      config.siteUrl = 'https://tienda2905.github.io/MADYS/';
+    }
+
+    let categories = JSON.parse(localStorage.getItem('mady_categories')) || DEFAULT_CATEGORIES;
+    let products = JSON.parse(localStorage.getItem('mady_products')) || DEFAULT_PRODUCTS;
+    let cart = JSON.parse(localStorage.getItem('mady_cart')) || [];
+
+    let currentCategory = 'todos';
+    let currentSearchTerm = '';
+    let currentSort = 'featured';
+    let tempFormPhotos = [];
+    let editingProductId = null;
+    let activeModalProduct = null;
+    let currentModalPhotoIndex = 0;
+    let selectedModalVariant = '';
+
+    window.addEventListener('DOMContentLoaded', () => {
+      applyConfigToDOM();
+      renderCategoryTabs();
+      renderProducts();
+      updateCartUI();
+      renderAdminInventory();
+      populateCategorySelect();
+      loadRemoteData();
+    });
+
+    function applyConfigToDOM() {
+      document.documentElement.style.setProperty('--primary-color', config.primaryColor || '#681B32');
+      document.documentElement.style.setProperty('--gold-color', config.goldColor || '#C39B53');
+      document.documentElement.style.setProperty('--bg-color', config.bgColor || '#FAF8F5');
+      document.documentElement.style.setProperty('--font-title', config.fontFamily || "'Playfair Display', serif");
+      document.documentElement.style.setProperty('--radius-val', config.borderRadius || '1rem');
+
+      document.getElementById('heroBadgeText').textContent = config.heroBadge || DEFAULT_CONFIG.heroBadge;
+      document.getElementById('heroTitleLine1').textContent = config.heroTitle1 || DEFAULT_CONFIG.heroTitle1;
+      document.getElementById('heroTitleLine2').textContent = config.heroTitle2 || DEFAULT_CONFIG.heroTitle2;
+      document.getElementById('heroSubtitleText').textContent = config.heroSubtitle || DEFAULT_CONFIG.heroSubtitle;
+
+      document.getElementById('cfgDesignPrimaryColor').value = config.primaryColor || '#681B32';
+      document.getElementById('cfgDesignPrimaryHex').textContent = config.primaryColor || '#681B32';
+      document.getElementById('cfgDesignGoldColor').value = config.goldColor || '#C39B53';
+      document.getElementById('cfgDesignGoldHex').textContent = config.goldColor || '#C39B53';
+      document.getElementById('cfgDesignFont').value = config.fontFamily || "'Playfair Display', serif";
+      document.getElementById('cfgDesignRadius').value = config.borderRadius || '1rem';
+
+      document.getElementById('cfgShareCustomMessage').value = config.shareMessage || DEFAULT_CONFIG.shareMessage;
+
+      document.getElementById('cfgGhOwner').value = config.ghOwner || 'tienda2905';
+      document.getElementById('cfgGhRepo').value = config.ghRepo || 'MADYS';
+      document.getElementById('cfgGhBranch').value = config.ghBranch || 'main';
+      document.getElementById('cfgSiteUrl').value = config.siteUrl || DEFAULT_CONFIG.siteUrl;
+      document.getElementById('cfgWhatsApp').value = config.whatsapp || '4437459566';
+      document.getElementById('cfgGithubToken').value = localStorage.getItem('mady_gh_token') || '';
+
+      const rawWa = (config.whatsapp || '').replace(/[^0-9]/g, '');
+      const validWa = rawWa.length === 10 ? '52' + rawWa : rawWa;
+      document.getElementById('floatWhatsAppBtn').href = `https://wa.me/${validWa}`;
+
+      const savedToken = localStorage.getItem('mady_gh_token');
+      const syncStatus = document.getElementById('ghSyncStatusText');
+      if (savedToken && savedToken.trim().length > 0) {
+        syncStatus.innerHTML = `🟢 Conectado con <strong>${config.ghOwner}/${config.ghRepo}</strong>`;
+        document.getElementById('ghSyncStatusBar').className = "p-2.5 text-xs flex items-center justify-between bg-emerald-50 text-emerald-900 border-b border-emerald-200";
+      } else {
+        syncStatus.innerHTML = "🟡 Falta token en 'Conexión GitHub' para auto-guardar.";
+        document.getElementById('ghSyncStatusBar').className = "p-2.5 text-xs flex items-center justify-between bg-amber-50 text-amber-900 border-b border-amber-200";
+      }
+    }
+
+    async function loadRemoteData() {
+      const owner = (config.ghOwner || "tienda2905").trim();
+      const repo = (config.ghRepo || "MADYS").trim();
+      const branch = (config.ghBranch || "main").trim();
+
+      const urls = [
+        `./datos_tienda.json?_=${Date.now()}`,
+        `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/datos_tienda.json?_=${Date.now()}`,
+        `https://raw.githubusercontent.com/${owner}/${repo}/master/datos_tienda.json?_=${Date.now()}`
+      ];
+
+      for (const url of urls) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            const data = await res.json();
+            if (data.config) {
+              const safeRemote = { ...data.config };
+              delete safeRemote.token;
+              delete safeRemote.githubToken;
+              config = { ...config, ...safeRemote };
+            }
+            if (data.categories && data.categories.length) categories = data.categories;
+            if (data.products && data.products.length) products = data.products;
+            applyConfigToDOM();
+            renderCategoryTabs();
+            renderProducts();
+            renderAdminInventory();
+            return;
+          }
+        } catch (e) {}
+      }
+    }
+
+    /* --- SINCRONIZACIÓN SEGURA SIN EXPONER TOKENS --- */
+    async function syncToGitHubApi() {
+      const token = (localStorage.getItem('mady_gh_token') || "").trim();
+      if (!token) return { success: false, reason: "no_token" };
+
+      const owner = (config.ghOwner || "tienda2905").trim();
+      const repo = (config.ghRepo || "MADYS").trim();
+      let branch = (config.ghBranch || "main").trim();
+      const path = "datos_tienda.json";
+
+      // Detectar rama principal
+      try {
+        const repoInfoRes = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github.v3+json"
+          }
+        });
+        if (repoInfoRes.ok) {
+          const repoData = await repoInfoRes.json();
+          if (repoData.default_branch) {
+            branch = repoData.default_branch;
+            config.ghBranch = branch;
+          }
+        }
+      } catch (e) {}
+
+      // Sanitizar el objeto: remover cualquier clave secreta
+      const sanitizedConfig = { ...config };
+      delete sanitizedConfig.token;
+      delete sanitizedConfig.githubToken;
+      delete sanitizedConfig.ghToken;
+
+      const payload = {
+        config: sanitizedConfig,
+        categories: categories,
+        products: products,
+        updatedAt: new Date().toISOString()
+      };
+
+      let jsonStr = JSON.stringify(payload, null, 2);
+
+      // Doble filtro: si por cualquier motivo el token aparece en el JSON, removerlo
+      if (token && jsonStr.includes(token)) {
+        jsonStr = jsonStr.split(token).join("");
+      }
+
+      const contentBase64 = btoa(unescape(encodeURIComponent(jsonStr)));
+
+      let sha = null;
+
+      // Obtener SHA actual si el archivo ya existe
+      try {
+        const getRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`, {
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Accept": "application/vnd.github.v3+json"
+          }
+        });
+
+        if (getRes.ok) {
+          const fileData = await getRes.json();
+          sha = fileData.sha;
+        } else if (getRes.status === 401) {
+          throw new Error("Token incorrecto o sin permisos. Verifica que sea válido y tenga activado el permiso [repo].");
+        }
+      } catch (err) {
+        if (err.message.includes("Token")) throw err;
+      }
+
+      const putBody = {
+        message: `Actualización Novedades Mady - ${new Date().toLocaleString('es-MX')}`,
+        content: contentBase64,
+        branch: branch,
+        ...(sha ? { sha } : {})
+      };
+
+      const putRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+        method: "PUT",
+        headers: {
+          "Authorization": `Bearer ${token}`,
+          "Content-Type": "application/json",
+          "Accept": "application/vnd.github.v3+json"
+        },
+        body: JSON.stringify(putBody)
+      });
+
+      if (!putRes.ok) {
+        const errData = await putRes.json().catch(() => ({}));
+        let motivo = errData.message || "Error al conectar con GitHub";
+        
+        if (putRes.status === 404) {
+          motivo = `No se encontró "${owner}/${repo}" o la rama "${branch}". Revisa que el token tenga marcado el permiso [repo].`;
+        }
+        throw new Error(motivo);
+      }
+
+      return { success: true };
+    }
+
+    async function saveAndPersistEverywhere() {
+      // Limpiar antes de guardar en almacenamiento local
+      delete config.token;
+      delete config.githubToken;
+      delete config.ghToken;
+
+      localStorage.setItem('mady_config', JSON.stringify(config));
+      localStorage.setItem('mady_categories', JSON.stringify(categories));
+      localStorage.setItem('mady_products', JSON.stringify(products));
+
+      const token = localStorage.getItem('mady_gh_token');
+      if (token && token.trim().length > 0) {
+        showToast("Sincronizando...", "Subiendo cambios a GitHub.");
+        try {
+          await syncToGitHubApi();
+          showToast("¡En línea!", "Tu página en internet se actualizó correctamente.");
+        } catch (err) {
+          alert(`Aviso de guardado:\nSe guardó en este dispositivo, pero GitHub respondió:\n\n${err.message}`);
+        }
+      } else {
+        showToast("Guardado local", "Para reflejar en internet ingresa tu token en Conexión GitHub.");
+      }
+    }
+
+    function downloadJsonBackup() {
+      const sanitizedConfig = { ...config };
+      delete sanitizedConfig.token;
+      delete sanitizedConfig.githubToken;
+      const payload = { config: sanitizedConfig, categories, products, updatedAt: new Date().toISOString() };
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(payload, null, 2));
+      const dlAnchor = document.createElement('a');
+      dlAnchor.setAttribute("href", dataStr);
+      dlAnchor.setAttribute("download", "datos_tienda.json");
+      dlAnchor.click();
+      showToast("Descargando...", "Se descargó datos_tienda.json");
+    }
+
+    function requestAdminAccess() {
+      const pin = prompt("🔐 Acceso Administradora Novedades Mady\nIngresa tu contraseña:");
+      if (!pin) return;
+      if (pin.trim() === "TIENDA.94") {
+        toggleAdminDrawer(true);
+      } else {
+        alert("❌ Contraseña incorrecta.");
+      }
+    }
+
+    function toggleAdminDrawer(forceOpen = false) {
+      const backdrop = document.getElementById('adminBackdrop');
+      const drawer = document.getElementById('adminDrawer');
+      const isOpen = !backdrop.classList.contains('pointer-events-none');
+
+      if (isOpen && !forceOpen) {
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        drawer.classList.add('translate-x-full');
+      } else {
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        drawer.classList.remove('translate-x-full');
+        renderAdminInventory();
+        populateCategorySelect();
+      }
+    }
+
+    function switchAdminTab(tab) {
+      document.getElementById('admTabAddProduct').classList.toggle('hidden', tab !== 'addProduct');
+      document.getElementById('admTabInventory').classList.toggle('hidden', tab !== 'inventory');
+      document.getElementById('admTabDesign').classList.toggle('hidden', tab !== 'design');
+      document.getElementById('admTabWhatsApp').classList.toggle('hidden', tab !== 'whatsapp');
+      document.getElementById('admTabSync').classList.toggle('hidden', tab !== 'sync');
+
+      const tabs = ['addProduct', 'inventory', 'design', 'whatsapp', 'sync'];
+      const btns = ['admTabBtn1', 'admTabBtn2', 'admTabBtn3', 'admTabBtn4', 'admTabBtn5'];
+
+      tabs.forEach((t, i) => {
+        const btn = document.getElementById(btns[i]);
+        if (t === tab) {
+          btn.className = 'py-2.5 px-3 border-b-2 border-amber-600 font-bold bg-white text-stone-900 whitespace-nowrap';
+        } else {
+          btn.className = 'py-2.5 px-3 border-b-2 border-transparent text-stone-600 whitespace-nowrap';
+        }
+      });
+    }
+
+    function applyDesignTheme(primary, gold, bg) {
+      document.getElementById('cfgDesignPrimaryColor').value = primary;
+      document.getElementById('cfgDesignPrimaryHex').textContent = primary;
+      document.getElementById('cfgDesignGoldColor').value = gold;
+      document.getElementById('cfgDesignGoldHex').textContent = gold;
+      config.primaryColor = primary;
+      config.goldColor = gold;
+      config.bgColor = bg;
+      applyConfigToDOM();
+      showToast("Estilo aplicado", "Toca 'Guardar Diseño' para fijarlo.");
+    }
+
+    async function saveDesignSettingsAction() {
+      config.primaryColor = document.getElementById('cfgDesignPrimaryColor').value;
+      config.goldColor = document.getElementById('cfgDesignGoldColor').value;
+      config.fontFamily = document.getElementById('cfgDesignFont').value;
+      config.borderRadius = document.getElementById('cfgDesignRadius').value;
+
+      applyConfigToDOM();
+      await saveAndPersistEverywhere();
+      showToast("¡Diseño Guardado!", "Se actualizó la apariencia.");
+    }
+
+    document.getElementById('cfgDesignPrimaryColor').addEventListener('input', (e) => {
+      document.getElementById('cfgDesignPrimaryHex').textContent = e.target.value;
+      document.documentElement.style.setProperty('--primary-color', e.target.value);
+    });
+    document.getElementById('cfgDesignGoldColor').addEventListener('input', (e) => {
+      document.getElementById('cfgDesignGoldHex').textContent = e.target.value;
+      document.documentElement.style.setProperty('--gold-color', e.target.value);
+    });
+
+    function insertMsgTag(tag) {
+      const area = document.getElementById('cfgShareCustomMessage');
+      area.value += " " + tag;
+      area.focus();
+    }
+
+    function resetDefaultShareMsg() {
+      document.getElementById('cfgShareCustomMessage').value = DEFAULT_CONFIG.shareMessage;
+    }
+
+    async function saveWhatsAppMessageAction() {
+      config.shareMessage = document.getElementById('cfgShareCustomMessage').value.trim();
+      await saveAndPersistEverywhere();
+      showToast("Guardado", "El mensaje de WhatsApp ha sido actualizado.");
+    }
+
+    function shareCatalogLink() {
+      const url = config.siteUrl || window.location.href;
+      let msg = config.shareMessage || DEFAULT_CONFIG.shareMessage;
+      msg = msg.replace(/{LINK}/g, url);
+
+      const shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`;
+
+      if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        navigator.share({ title: 'Novedades Mady', text: msg, url: url }).catch(() => {
+          window.open(shareUrl, '_blank');
+        });
+      } else {
+        window.open(shareUrl, '_blank');
+      }
+    }
+
+    async function saveSyncConfigAction() {
+      const token = document.getElementById('cfgGithubToken').value.trim();
+      localStorage.setItem('mady_gh_token', token);
+
+      config.ghOwner = document.getElementById('cfgGhOwner').value.trim() || 'tienda2905';
+      config.ghRepo = document.getElementById('cfgGhRepo').value.trim() || 'MADYS';
+      config.ghBranch = document.getElementById('cfgGhBranch').value.trim() || 'main';
+      config.siteUrl = document.getElementById('cfgSiteUrl').value.trim() || DEFAULT_CONFIG.siteUrl;
+      config.whatsapp = document.getElementById('cfgWhatsApp').value.trim() || '4437459566';
+
+      applyConfigToDOM();
+      await saveAndPersistEverywhere();
+    }
+
+    function compressImageFile(file, maxWidth = 800, quality = 0.72) {
+      return new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const img = new Image();
+          img.onload = () => {
+            let w = img.width, h = img.height;
+            if (w > maxWidth) { h = Math.round((h * maxWidth) / w); w = maxWidth; }
+            const canvas = document.createElement('canvas');
+            canvas.width = w; canvas.height = h;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, w, h);
+            resolve(canvas.toDataURL('image/jpeg', quality));
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function handleMultipleImagesUpload(event) {
+      const files = Array.from(event.target.files);
+      if (!files.length) return;
+      if (tempFormPhotos.length + files.length > 10) {
+        alert("Máximo 10 fotos por producto.");
+      }
+      showToast("Procesando...", "Comprimiendo imágenes.");
+      for (const file of files) {
+        if (tempFormPhotos.length >= 10) break;
+        const compressed = await compressImageFile(file);
+        tempFormPhotos.push(compressed);
+      }
+      renderFormPhotos();
+      event.target.value = '';
+    }
+
+    function addUrlPhoto() {
+      const inp = document.getElementById('singleImgUrlInput');
+      const val = inp.value.trim();
+      if (!val) return;
+      if (tempFormPhotos.length >= 10) return alert("Máximo 10 fotos.");
+      tempFormPhotos.push(val);
+      inp.value = '';
+      renderFormPhotos();
+    }
+
+    function removeFormPhoto(idx) {
+      tempFormPhotos.splice(idx, 1);
+      renderFormPhotos();
+    }
+
+    function renderFormPhotos() {
+      const container = document.getElementById('photosPreviewContainer');
+      document.getElementById('photoCounterBadge').textContent = `${tempFormPhotos.length} / 10`;
+      if (!tempFormPhotos.length) {
+        container.innerHTML = `<p class="col-span-5 text-[10px] text-stone-400 text-center py-2 italic">Sin fotos seleccionadas aún.</p>`;
+        return;
+      }
+      container.innerHTML = tempFormPhotos.map((src, i) => `
+        <div class="relative aspect-square rounded overflow-hidden border border-stone-200">
+          <img src="${src}" class="w-full h-full object-cover">
+          <button onclick="removeFormPhoto(${i})" class="absolute top-0.5 right-0.5 w-4 h-4 bg-red-600 text-white rounded-full text-[9px] flex items-center justify-center">×</button>
+        </div>
+      `).join('');
+    }
+
+    async function saveProductAction() {
+      const name = document.getElementById('newProdName').value.trim();
+      const category = document.getElementById('newProdCat').value.trim().toLowerCase() || 'ropa';
+      const price = parseFloat(document.getElementById('newProdPrice').value);
+      const oldPrice = parseFloat(document.getElementById('newProdOldPrice').value) || null;
+      const sku = document.getElementById('newProdSku').value.trim() || `MD-${Date.now().toString().slice(-4)}`;
+      const variantsRaw = document.getElementById('newProdVariants').value.trim();
+      const desc = document.getElementById('newProdDesc').value.trim();
+      const isSale = document.getElementById('newProdIsSale').checked;
+
+      if (!name || isNaN(price)) {
+        alert("Por favor ingresa al menos el Nombre y un Precio válido.");
+        return;
+      }
+
+      const finalImages = tempFormPhotos.length > 0 ? [...tempFormPhotos] : ['https://via.placeholder.com/600x750?text=Novedades+Mady'];
+      const variants = variantsRaw ? variantsRaw.split(',').map(v => v.trim()).filter(Boolean) : ['Unitalla'];
+
+      if (editingProductId) {
+        const idx = products.findIndex(p => p.id === editingProductId);
+        if (idx !== -1) {
+          products[idx] = { ...products[idx], name, category, price, oldPrice, isSale, images: finalImages, description: desc, variants };
+          showToast("Actualizado", `${name} modificado.`);
+        }
+      } else {
+        products.unshift({ id: sku, name, category, price, oldPrice, isSale, images: finalImages, description: desc, variants });
+        showToast("¡Publicado!", `${name} agregado.`);
+      }
+
+      resetProductForm();
+      renderProducts();
+      renderAdminInventory();
+      await saveAndPersistEverywhere();
+      switchAdminTab('inventory');
+    }
+
+    function editProduct(id) {
+      const prod = products.find(p => p.id === id);
+      if (!prod) return;
+      editingProductId = prod.id;
+      document.getElementById('formModeTitle').textContent = `Editando: ${prod.name}`;
+      document.getElementById('cancelEditBtn').classList.remove('hidden');
+      document.getElementById('saveProdBtn').textContent = "Guardar Cambios";
+
+      document.getElementById('newProdName').value = prod.name;
+      document.getElementById('newProdCat').value = prod.category;
+      document.getElementById('newProdPrice').value = prod.price;
+      document.getElementById('newProdOldPrice').value = prod.oldPrice || '';
+      document.getElementById('newProdSku').value = prod.id;
+      document.getElementById('newProdVariants').value = (prod.variants || []).join(', ');
+      document.getElementById('newProdDesc').value = prod.description || '';
+      document.getElementById('newProdIsSale').checked = !!prod.isSale;
+
+      tempFormPhotos = prod.images ? [...prod.images] : [];
+      renderFormPhotos();
+      switchAdminTab('addProduct');
+    }
+
+    function resetProductForm() {
+      editingProductId = null;
+      document.getElementById('formModeTitle').textContent = "Nuevo Producto";
+      document.getElementById('cancelEditBtn').classList.add('hidden');
+      document.getElementById('saveProdBtn').textContent = "Publicar en Catálogo";
+      document.getElementById('newProdName').value = '';
+      document.getElementById('newProdPrice').value = '';
+      document.getElementById('newProdOldPrice').value = '';
+      document.getElementById('newProdSku').value = '';
+      document.getElementById('newProdVariants').value = '';
+      document.getElementById('newProdDesc').value = '';
+      document.getElementById('newProdIsSale').checked = false;
+      tempFormPhotos = [];
+      renderFormPhotos();
+    }
+
+    async function deleteProduct(id) {
+      if (!confirm(`¿Eliminar producto ${id}?`)) return;
+      products = products.filter(p => p.id !== id);
+      renderProducts();
+      renderAdminInventory();
+      await saveAndPersistEverywhere();
+    }
+
+    function renderAdminInventory() {
+      const listEl = document.getElementById('admInventoryList');
+      document.getElementById('admProdCount').textContent = products.length;
+      if (!listEl) return;
+      listEl.innerHTML = products.map(item => `
+        <div class="flex items-center justify-between p-2 bg-stone-50 border rounded-xl">
+          <div class="flex items-center gap-2 overflow-hidden">
+            <img src="${item.images[0]}" class="w-10 h-12 object-cover rounded bg-stone-200 flex-shrink-0">
+            <div class="truncate">
+              <h5 class="text-xs font-bold text-stone-800 truncate">${item.name}</h5>
+              <p class="text-[10px] text-stone-500 font-mono">${item.id} • $${Number(item.price).toLocaleString('es-MX')} MXN</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-1">
+            <button onclick="editProduct('${item.id}')" class="px-2 py-1 bg-stone-200 text-stone-700 hover:bg-stone-300 rounded text-xs font-semibold">Editar</button>
+            <button onclick="deleteProduct('${item.id}')" class="p-1 text-stone-400 hover:text-red-600"><i class="fas fa-trash-alt text-xs"></i></button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderProducts() {
+      const container = document.getElementById('productGrid');
+      const emptyState = document.getElementById('emptyState');
+      const countEl = document.getElementById('productCountInfo');
+
+      let filtered = products.filter(p => {
+        const matchesCat = currentCategory === 'todos' || (currentCategory === 'ofertas' ? p.isSale : p.category === currentCategory);
+        const matchesSearch = p.name.toLowerCase().includes(currentSearchTerm.toLowerCase()) || p.id.toLowerCase().includes(currentSearchTerm.toLowerCase());
+        return matchesCat && matchesSearch;
+      });
+
+      if (currentSort === 'price-asc') filtered.sort((a,b) => a.price - b.price);
+      else if (currentSort === 'price-desc') filtered.sort((a,b) => b.price - a.price);
+      else if (currentSort === 'name') filtered.sort((a,b) => a.name.localeCompare(b.name));
+
+      countEl.textContent = `Mostrando ${filtered.length} de ${products.length} productos`;
+
+      if (!filtered.length) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+      emptyState.classList.add('hidden');
+
+      container.innerHTML = filtered.map(item => `
+        <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+          <div class="relative aspect-[4/5] bg-stone-100 cursor-pointer overflow-hidden" onclick="openProductModal('${item.id}')">
+            <img src="${item.images[0]}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            ${item.isSale ? '<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full text-[9px] font-bold uppercase bg-rose-600 text-white">Oferta</span>' : ''}
+            <span class="absolute top-2.5 right-2.5 px-1.5 py-0.5 rounded bg-black/60 text-white text-[9px] font-mono">${item.images.length} 📷</span>
+          </div>
+          <div class="p-3.5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 onclick="openProductModal('${item.id}')" class="font-title text-base font-bold text-stone-900 cursor-pointer hover:underline line-clamp-1">${item.name}</h3>
+              <p class="text-xs text-stone-500 line-clamp-2 mt-1 font-light">${item.description || 'Novedad exclusiva.'}</p>
+            </div>
+            <div class="mt-3 pt-2 border-t border-stone-100 flex items-center justify-between">
+              <div>
+                <span class="font-title text-lg font-bold" style="color: var(--primary-color);">$${Number(item.price).toLocaleString('es-MX')}</span>
+                ${item.oldPrice ? `<span class="text-[10px] text-stone-400 line-through ml-1">$${item.oldPrice}</span>` : ''}
+              </div>
+              <button onclick="addProductToCart('${item.id}')" style="background-color: var(--primary-color);" class="text-white text-xs px-3 py-1.5 rounded-xl font-bold flex items-center gap-1 shadow hover:opacity-90">
+                <i class="fas fa-plus text-[10px]"></i> Pedir
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderCategoryTabs() {
+      const container = document.getElementById('categoryTabsContainer');
+      container.innerHTML = categories.map(cat => `
+        <button onclick="filterCategory('${cat.key}')" class="px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition ${currentCategory === cat.key ? 'bg-amber-600 text-white shadow-xs' : 'bg-white text-stone-700 border hover:border-amber-500'}">
+          ${cat.name}
+        </button>
+      `).join('');
+    }
+
+    function filterCategory(cat) { currentCategory = cat; renderCategoryTabs(); renderProducts(); }
+    function handleSearch(val) { currentSearchTerm = val.trim(); renderProducts(); }
+    function applySorting(val) { currentSort = val; renderProducts(); }
+    function resetFilters() { currentCategory = 'todos'; currentSearchTerm = ''; renderCategoryTabs(); renderProducts(); }
+    function populateCategorySelect() {
+      const sel = document.getElementById('newProdCat');
+      if (!sel) return;
+      sel.innerHTML = categories.filter(c => c.key !== 'todos' && c.key !== 'ofertas').map(c => `<option value="${c.key}">${c.name}</option>`).join('');
+    }
+
+    function openProductModal(id) {
+      const item = products.find(p => p.id === id);
+      if (!item) return;
+      activeModalProduct = item;
+      currentModalPhotoIndex = 0;
+      selectedModalVariant = item.variants ? item.variants[0] : 'Unitalla';
+
+      document.getElementById('modalProductSku').textContent = `SKU: ${item.id}`;
+      document.getElementById('modalProductTitle').textContent = item.name;
+      document.getElementById('modalProductDesc').textContent = item.description || 'Exclusivo en Novedades Mady.';
+      document.getElementById('modalProductPrice').textContent = `$${Number(item.price).toLocaleString('es-MX')} MXN`;
+
+      const oldEl = document.getElementById('modalProductOldPrice');
+      if (item.oldPrice) { oldEl.textContent = `$${item.oldPrice}`; oldEl.classList.remove('hidden'); }
+      else { oldEl.classList.add('hidden'); }
+
+      const vars = item.variants && item.variants.length ? item.variants : ['Unitalla'];
+      document.getElementById('modalVariantOptions').innerHTML = vars.map((v, i) => `
+        <button onclick="selectModalVariant('${v}')" class="modal-v-btn px-2.5 py-1 text-xs border rounded-lg ${i === 0 ? 'bg-amber-600 text-white' : 'bg-stone-100 text-stone-700'}">${v}</button>
+      `).join('');
+
+      updateModalPhotoDisplay();
+      const modal = document.getElementById('productDetailModal');
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.querySelector('div').classList.remove('scale-95');
+    }
+
+    function updateModalPhotoDisplay() {
+      if (!activeModalProduct) return;
+      const imgs = activeModalProduct.images || [];
+      document.getElementById('modalProductImg').src = imgs[currentModalPhotoIndex] || imgs[0];
+      document.getElementById('modalPhotoCounter').textContent = `${currentModalPhotoIndex + 1} / ${imgs.length}`;
+
+      const strip = document.getElementById('modalThumbnailsStrip');
+      if (imgs.length > 1) {
+        strip.innerHTML = imgs.map((src, i) => `
+          <button onclick="setModalPhoto(${i})" class="w-10 h-12 rounded overflow-hidden border-2 flex-shrink-0 ${i === currentModalPhotoIndex ? 'border-amber-500' : 'border-transparent opacity-60'}">
+            <img src="${src}" class="w-full h-full object-cover">
+          </button>
+        `).join('');
+      } else { strip.innerHTML = ''; }
+    }
+
+    function navigateModalPhoto(d) {
+      if (!activeModalProduct) return;
+      const len = activeModalProduct.images.length;
+      currentModalPhotoIndex = (currentModalPhotoIndex + d + len) % len;
+      updateModalPhotoDisplay();
+    }
+
+    function setModalPhoto(i) { currentModalPhotoIndex = i; updateModalPhotoDisplay(); }
+    function selectModalVariant(v) {
+      selectedModalVariant = v;
+      document.querySelectorAll('.modal-v-btn').forEach(btn => {
+        btn.className = btn.textContent === v ? 'modal-v-btn px-2.5 py-1 text-xs border rounded-lg bg-amber-600 text-white' : 'modal-v-btn px-2.5 py-1 text-xs border rounded-lg bg-stone-100 text-stone-700';
+      });
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('productDetailModal');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.querySelector('div').classList.add('scale-95');
+      activeModalProduct = null;
+    }
+
+    function addProductToCart(id) {
+      const item = products.find(p => p.id === id);
+      if (!item) return;
+      const variant = item.variants ? item.variants[0] : 'Unitalla';
+      const existing = cart.find(c => c.id === id && c.variant === variant);
+      if (existing) existing.quantity++;
+      else cart.push({ id: item.id, name: item.name, price: item.price, variant, image: item.images[0], quantity: 1 });
+      saveCart(); updateCartUI(); showToast("Agregado", `${item.name}`);
+    }
+
+    function addModalProductToCart() {
+      if (!activeModalProduct) return;
+      const existing = cart.find(c => c.id === activeModalProduct.id && c.variant === selectedModalVariant);
+      if (existing) existing.quantity++;
+      else cart.push({ id: activeModalProduct.id, name: activeModalProduct.name, price: activeModalProduct.price, variant: selectedModalVariant, image: activeModalProduct.images[0], quantity: 1 });
+      saveCart(); updateCartUI(); closeProductModal(); showToast("Agregado", `${activeModalProduct.name}`);
+    }
+
+    function changeQuantity(idx, d) {
+      if (cart[idx]) { cart[idx].quantity += d; if (cart[idx].quantity <= 0) cart.splice(idx, 1); saveCart(); updateCartUI(); }
+    }
+    function removeCartItem(idx) { cart.splice(idx, 1); saveCart(); updateCartUI(); }
+    function saveCart() { localStorage.setItem('mady_cart', JSON.stringify(cart)); }
+
+    function updateCartUI() {
+      const badge = document.getElementById('cartBadge');
+      const list = document.getElementById('cartItemList');
+      const totalEl = document.getElementById('cartTotal');
+      const totalItems = cart.reduce((s, c) => s + c.quantity, 0);
+      badge.textContent = totalItems;
+
+      let total = 0;
+      if (!cart.length) {
+        list.innerHTML = `<div class="py-12 text-center text-stone-400 text-xs">Tu pedido está vacío.</div>`;
+      } else {
+        list.innerHTML = cart.map((item, i) => {
+          total += item.price * item.quantity;
+          return `
+            <div class="flex gap-2.5 bg-white p-2.5 rounded-xl border border-stone-200">
+              <img src="${item.image}" class="w-12 h-14 object-cover rounded bg-stone-100 flex-shrink-0">
+              <div class="flex-1 flex flex-col justify-between">
+                <div class="flex justify-between items-start">
+                  <h4 class="text-xs font-bold text-stone-800 line-clamp-1">${item.name}</h4>
+                  <button onclick="removeCartItem(${i})" class="text-stone-400 hover:text-red-600 text-xs ml-1"><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <span class="text-[10px] text-amber-700">${item.variant}</span>
+                <div class="flex justify-between items-center mt-1">
+                  <div class="flex items-center border rounded">
+                    <button onclick="changeQuantity(${i}, -1)" class="px-2 py-0.5 text-xs">-</button>
+                    <span class="px-2 text-xs font-bold">${item.quantity}</span>
+                    <button onclick="changeQuantity(${i}, 1)" class="px-2 py-0.5 text-xs">+</button>
+                  </div>
+                  <span class="text-xs font-bold font-title">$${item.price * item.quantity} MXN</span>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+      totalEl.textContent = `$${total.toLocaleString('es-MX')} MXN`;
+    }
+
+    function toggleCartModal() {
+      const backdrop = document.getElementById('cartModalBackdrop');
+      const drawer = document.getElementById('cartDrawer');
+      const isOpen = !backdrop.classList.contains('pointer-events-none');
+      if (isOpen) { backdrop.classList.add('opacity-0', 'pointer-events-none'); drawer.classList.add('translate-x-full'); }
+      else { backdrop.classList.remove('opacity-0', 'pointer-events-none'); drawer.classList.remove('translate-x-full'); }
+    }
+
+    function sendOrderWhatsApp() {
+      if (!cart.length) return alert("Tu pedido está vacío.");
+      const name = document.getElementById('customerNameInput').value.trim() || 'Cliente';
+      const loc = document.getElementById('customerLocationInput').value.trim() || config.location;
+      let total = 0, itemsTxt = '';
+
+      cart.forEach((item, i) => {
+        total += item.price * item.quantity;
+        itemsTxt += `\n${i + 1}. *${item.name}*\n   ▫ Opción: ${item.variant}\n   ▫ Cant: ${item.quantity}\n   ▫ Subtotal: $${item.price * item.quantity} MXN\n`;
+      });
+
+      const msg = `✨ *NUEVO PEDIDO - NOVEDADES MADY* ✨\n👤 *Cliente:* ${name}\n📍 *Lugar de Entrega:* ${loc}\n🛍️ *PRODUCTOS:*${itemsTxt}\n💰 *TOTAL ESTIMADO:* $${total} MXN\n\n¡Hola! Me gustaría coordinar mi pedido. Gracias.`;
+      const rawWa = (config.whatsapp || '').replace(/[^0-9]/g, '');
+      const validWa = rawWa.length === 10 ? '52' + rawWa : rawWa;
+      window.open(`https://wa.me/${validWa}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    function inquireSingleProductWhatsApp() {
+      if (!activeModalProduct) return;
+      const msg = `¡Hola *Novedades Mady*! Me interesa este producto:\n\n✨ *${activeModalProduct.name}*\n▫ SKU: ${activeModalProduct.id}\n▫ Variante: *${selectedModalVariant}*\n▫ Precio: *$${activeModalProduct.price} MXN*\n\n¿Tienen entrega inmediata?`;
+      const rawWa = (config.whatsapp || '').replace(/[^0-9]/g, '');
+      const validWa = rawWa.length === 10 ? '52' + rawWa : rawWa;
+      window.open(`https://wa.me/${validWa}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    let toastTimer;
+    function showToast(title, msg) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none'), 3000);
+    }
+  </script>
+</body>
+</html>
