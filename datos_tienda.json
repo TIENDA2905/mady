@@ -2,7 +2,7 @@
   "config": {
     "brandName": "Novedades Mady",
     "slogan": "Boutique & Tendencias",
-    "siteUrl": "https://tienda2905.github.io/MADYS/",
+    "siteUrl": "https://tienda2905.github.io/mady/",
     "ghOwner": "tienda2905",
     "ghRepo": "MADY",
     "whatsapp": "4437459566",
@@ -25,7 +25,8 @@
     "goldColor": "#34d399",
     "bgColor": "#F0FDF4",
     "fontFamily": "'Playfair Display', serif",
-    "borderRadius": ""
+    "borderRadius": "",
+    "shareMessage": "✨ *NOVEDADES MADY* ✨\n👗💄 *Catálogo Digital Exclusivo*\n\n¡Hola! Te invito a ver nuestras novedades y colección disponible aquí:\n👇 *Toca para ver el catálogo:* \n\nhttps://tienda2905.github.io/mady/\n_Puedes hacer tus pedidos o apartados directamente por WhatsApp._ 🌸✨"
   },
   "categories": [
     {
@@ -148,5 +149,5 @@
       "highlights": "Fórmula hipoalergénica de alta fijación hasta por 16 horas."
     }
   ],
-  "updatedAt": "2026-10-12T07:06:00.014Z"
+  "updatedAt": "2026-10-12T07:07:54.425Z"
 }
