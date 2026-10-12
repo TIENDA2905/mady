@@ -26,7 +26,7 @@
     "bgColor": "#F0FDF4",
     "fontFamily": "'Playfair Display', serif",
     "borderRadius": "",
-    "shareMessage": "✨ *NOVEDADES MADY* ✨\n👗💄 *Catálogo Digital Exclusivo*\n\n¡Hola! Te invito a ver nuestras novedades y colección disponible aquí:\n👇 *Toca para ver el catálogo:* \n\nhttps://tienda2905.github.io/mady/\n_Puedes hacer tus pedidos o apartados directamente por WhatsApp._ 🌸✨"
+    "shareMessage": "✨ *NOVEDADES MADY* ✨\n👗💄 *Catálogo Digital Exclusivo*\n\n¡Hola! Te invito a ver nuestras novedades y colección disponible aquí:\n👇 *Toca para ver el catálogo:* \nhttps://tienda2905.github.io/mady/\n_Puedes hacer tus pedidos o apartados directamente por WhatsApp._ 🌸✨ {LINK}"
   },
   "categories": [
     {
@@ -149,5 +149,5 @@
       "highlights": "Fórmula hipoalergénica de alta fijación hasta por 16 horas."
     }
   ],
-  "updatedAt": "2026-10-12T07:07:54.425Z"
+  "updatedAt": "2026-10-12T07:09:53.719Z"
 }
